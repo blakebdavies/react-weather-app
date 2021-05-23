@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import Loader from "react-loader-spinner";
 import "./Weather.css";
 import axios from "axios";
 
@@ -61,7 +62,15 @@ export default function Weather(props){
     }
     else{
         search();
-    return "Loading...";
+    return (
+    <Loader
+        type="Oval"
+        color="#1e1e1e"
+        height={100}
+        width={100}
+
+      />
+    );
     };
         
 }
