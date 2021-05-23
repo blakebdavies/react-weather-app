@@ -47,3 +47,7 @@
   position: relative;
   top: -32px;
 }
+
+.Weather .unit a {
+  text-decoration: none;
+}
