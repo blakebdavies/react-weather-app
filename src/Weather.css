@@ -26,11 +26,10 @@
   list-style: none;
 }
 
-.Weather img {
+.Weather canvas {
   float: left;
   margin-right: 10px;
-  height: 64px;
-  width: 64px;
+  margin-top: 5px;
 }
 
 .Weather .temperature {
