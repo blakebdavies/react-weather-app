@@ -50,3 +50,7 @@
 .Weather .unit a {
   text-decoration: none;
 }
+
+.WeatherInfo .main-icon {
+  float: left;
+}
