@@ -19,9 +19,10 @@ function handleResponse(response){
 
     function load(){
     const apiKey="ff72838e9031d5bea109425dc6b40694";
+    let unit="metric";
     let longitude=props.coordinates.lon;
     let latitude=props.coordinates.lat;
-    let apiUrl =`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    let apiUrl =`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${unit}`;
     axios.get(apiUrl).then(handleResponse);
     }
 
@@ -34,7 +35,7 @@ function handleResponse(response){
                     if (index < 5) {
                     return (
                 <div className="col" key={index}>
-               <WeatherForecastDay data={dailyForecast}/>
+               <WeatherForecastDay data={dailyForecast} unit={props.unit}/>
                 </div>
                     );
                     } else{
