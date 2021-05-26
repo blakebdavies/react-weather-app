@@ -51,6 +51,9 @@
   text-decoration: none;
 }
 
+.WeatherInfo {
+  margin-bottom: 5px;
+}
 .WeatherInfo .main-icon {
   float: left;
 }
