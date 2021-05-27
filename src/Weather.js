@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
+
 import Loader from "react-loader-spinner";
 import "./Weather.css";
 import axios from "axios";
@@ -11,6 +12,7 @@ export default function Weather(props){
     const [unit, setUnit] = useState("celsius");
 
     function handleResponse(response){
+        console.log(response);
         setWeatherData({
             ready: true,
             coordinates: response.data.coord,
@@ -20,7 +22,8 @@ export default function Weather(props){
             humidity: response.data.main.humidity,
             icon: response.data.weather[0].icon,
             temperature:response.data.main.temp, 
-            wind: response.data.wind.speed
+            wind: response.data.wind.speed,
+
             
         });
     }

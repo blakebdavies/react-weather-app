@@ -1,4 +1,5 @@
 .Weather {
+  background: rgb(196, 242, 255);
   border: 1px solid #dadde1;
   border-radius: 4px;
   color: rgb(135, 135, 135);
@@ -8,10 +9,10 @@
 
 .Weather h1 {
   color: #878787;
-  font-size: 24px;
+  font-size: 34px;
   font-weight: 100;
   line-height: 29px;
-  margin: 20px 0 0 0;
+  margin: 5px 0 10px 0;
 }
 
 .Weather ul {
@@ -51,9 +52,19 @@
   text-decoration: none;
 }
 
-.WeatherInfo {
-  margin-bottom: 5px;
+.WeatherInfo .last-updated {
+  font-size: 14px;
+  padding: 10px 0 0 2px;
 }
+
+.WeatherInfo .weather-overview {
+  background-color: rgba(255, 214, 241, 0.44);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin: 15px 15px 0 15px;
+  padding: 20px;
+}
+
 .WeatherInfo .main-icon {
   float: left;
 }

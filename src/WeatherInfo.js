@@ -1,6 +1,6 @@
 import React from "react";
-import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import LastUpdated from "./LastUpdated";
 import WeatherTemperature from "./WeatherTemperature";
 
 
@@ -8,14 +8,16 @@ import WeatherTemperature from "./WeatherTemperature";
 export default function WeatherInfo(props){
     return(
         <div className="WeatherInfo">
-            <h1>{props.data.city}</h1>
+            <div className="last-updated">
+            <LastUpdated date={props.data.date}/>
+            </div>
+            <div className="weather-overview">
+            <h1 className="city">{props.data.city}</h1>
             <ul>
                 <li>
-                    <FormattedDate date={props.data.date}/>
+                 Put Local Date/Time Here
                 </li>
-                <li className="text-capitalize">
-                    {props.data.description}
-                </li>
+               
             </ul>
             <div className="row mt-3">
                 <div className="col-6">
@@ -31,6 +33,9 @@ export default function WeatherInfo(props){
                 </div>
                 <div className="col-6">
                     <ul>
+                         <li className="description text-capitalize">
+                            {props.data.description}
+                        </li>
                         <li>
                             Humidity: {props.data.humidity}%
                         </li>
@@ -39,6 +44,7 @@ export default function WeatherInfo(props){
                         </li>
                     </ul>
                 </div>
+            </div>
             </div>
             </div>
        
