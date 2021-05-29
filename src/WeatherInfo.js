@@ -1,6 +1,7 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import LastUpdated from "./LastUpdated";
+import FormattedTime from "./FormattedTime";
 import WeatherTemperature from "./WeatherTemperature";
 
 
@@ -15,7 +16,7 @@ export default function WeatherInfo(props){
             <h1 className="city">{props.data.city}</h1>
             <ul>
                 <li>
-                 Put Local Date/Time Here
+                 <FormattedTime time={props.data.date} timezone={props.data.timezone}/>
                 </li>
                
             </ul>

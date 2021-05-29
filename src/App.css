@@ -9,11 +9,12 @@
 }
 
 .App-wrapper {
+  background-color: turquoise;
   max-width: 800px;
   display: flex;
   flex-direction: column;
   color: white;
-  border-radius: 10px;
+  border-radius: 4px;
   border: 0px;
   box-shadow: 5px 5px 8px rgba(71, 71, 71, 0.5);
 }

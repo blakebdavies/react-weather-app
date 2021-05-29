@@ -23,6 +23,7 @@ export default function Weather(props){
             icon: response.data.weather[0].icon,
             temperature:response.data.main.temp, 
             wind: response.data.wind.speed,
+            timezone: response.data.timezone
 
             
         });
