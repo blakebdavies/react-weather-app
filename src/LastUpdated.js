@@ -10,7 +10,14 @@ export default function FormattedDate(props){
         "Friday",
         "Saturday"
     ];
+
+    let months=[
+        "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"
+    ];
+
     let day = days[props.date.getDay()];
+    let date = props.date.getDate();
+    let month= months[props.date.getMonth()];
     let hours =props.date.getHours();
     if (hours < 10){
         hours = `0${hours}`;
@@ -23,7 +30,7 @@ export default function FormattedDate(props){
 
 return (
     <div className="LastUpdated">
-       Last Updated: {day} {hours}:{minutes}
+       Last Updated: {day} {date} {month} at {hours}:{minutes}
     </div>
 );
 }
