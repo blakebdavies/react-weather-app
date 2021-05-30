@@ -1,6 +1,6 @@
 .App {
   margin: 30px auto;
-  max-width: 650px;
+  max-width: 750px;
 }
 
 .App footer {
@@ -9,8 +9,7 @@
 }
 
 .App-wrapper {
-  background-color: turquoise;
-  max-width: 800px;
+  max-width: 850px;
   display: flex;
   flex-direction: column;
   color: white;
