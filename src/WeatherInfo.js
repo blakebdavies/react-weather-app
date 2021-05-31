@@ -4,7 +4,7 @@ import LastUpdated from "./LastUpdated";
 import FormattedTime from "./FormattedTime";
 import WeatherTemperature from "./WeatherTemperature";
 
-import "./WeatherInfo.css";
+import "./WeatherInfo.css"
 
 
 
@@ -15,14 +15,11 @@ export default function WeatherInfo(props){
             <LastUpdated date={props.data.date}/>
             </div>
             <div className="weather-overview">
-            <h1 className="city">{props.data.city},{props.data.country}</h1>
+            <h1 className="city">{props.data.city}, {props.data.country}</h1>
             <ul>
                 <li>
                  <FormattedTime time={props.data.date} timezone={props.data.timezone}/>
                 </li>
-                <li className="description text-capitalize">
-                            {props.data.description}
-                        </li>
                
             </ul>
             <div className="row g-0 mt-3">
@@ -37,16 +34,16 @@ export default function WeatherInfo(props){
                     </div>
                 </div>
                 </div>
-                <div className="col-6">
+                <div className="current-weather col-6">
                     <ul>
-                         <li>
-                             Feels Like: {Math.round(props.data.feels)}°
-                             </li>
-                        <li>
-                            Humidity: {props.data.humidity}%
+                         <li className="description text-capitalize">
+                          {props.data.description}
                         </li>
                         <li>
-                            Wind: {Math.round(props.data.wind)} km/h
+                            <i class="fas fa-tint"></i> Humidity: {props.data.humidity}%
+                        </li>
+                        <li>
+                            <i class="fas fa-wind"></i>Wind: {Math.round(props.data.wind)} km/h
                         </li>
                     </ul>
                 </div>

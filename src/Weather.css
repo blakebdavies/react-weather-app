@@ -1,19 +1,30 @@
 .Weather {
-  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  background: #aa076b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #61045f,
+    #aa076b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #61045f,
+    #aa076b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   border: 1px solid #dadde1;
   border-radius: 4px;
-  color: rgb(135, 135, 135);
+  color: #01345b;
   font-family: Arial, Helvetica, sans-serif;
   padding: 16px;
 }
 
 .Weather h1 {
-  color: #504e4e;
-  font-size: 45px;
+  color: #01345b;
+  font-size: 50px;
   font-weight: 100;
   line-height: 29px;
   margin: 5px 0 10px 0;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
 
 .Weather ul {
@@ -26,7 +37,6 @@
   font-weight: 100;
   line-height: 19px;
   list-style: none;
-  padding: 3px;
 }
 
 .Weather canvas {
@@ -35,21 +45,34 @@
 }
 
 .Weather .temperature {
-  color: rgb(33, 33, 33);
+  color: #01345b;
   font-size: 64px;
   font-weight: 400;
   line-height: 64px;
 }
 
 .Weather .unit {
-  color: rgb(33, 33, 33);
+  color: #01345b;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 1;
   position: relative;
   top: -32px;
 }
 
-.Weather .unit a {
+.WeatherTemperature .unit .active {
+  color: #01345b;
+  cursor: default;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.WeatherTemperature a {
+  color: rgb(103, 115, 122);
+  text-decoration: none;
+}
+
+.WeatherTemperature a:hover {
+  color: #fbd46d;
   text-decoration: none;
 }

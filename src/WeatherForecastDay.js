@@ -8,7 +8,7 @@ export default function WeatherForecastDay(props){
         if (props.unit !== "celsius"){
             temperature = Math.round((temperature *9)/5 +32);
         }
-       return `${temperature}°`
+       return (<strong>{temperature}°</strong>);
     }
     function minTemperature(){
       let temperature = Math.round(props.data.temp.min);
@@ -29,7 +29,7 @@ export default function WeatherForecastDay(props){
         <div className="WeatherForecastDay">
  
  <div className="WeatherForecast-day">
-     {day()}
+     <strong>{day()}</strong>
  </div>
 
 <WeatherIcon code={props.data.weather[0].icon} size={36} />

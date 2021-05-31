@@ -9,7 +9,8 @@
 }
 
 .WeatherForecast .WeatherForecastDay {
-  background-color: rgba(255, 214, 241, 0.44);
+  color: #01345b;
+  background-color: rgba(238, 221, 231, 0.658);
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 10px;

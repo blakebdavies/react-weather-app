@@ -1,10 +1,11 @@
 .WeatherInfo .last-updated {
+  color: rgba(245, 243, 244, 0.527);
   font-size: 14px;
   padding: 10px 0 0 2px;
 }
 
 .WeatherInfo .weather-overview {
-  background-color: rgb(255, 214, 241, 0.487);
+  background-color: rgba(245, 243, 244, 0.527);
   border: 1px solid transparent;
   border-radius: 4px;
   margin: 15px 15px 0 15px;
@@ -13,4 +14,14 @@
 
 .WeatherInfo .main-icon {
   float: left;
+}
+
+.WeatherInfo .current-weather {
+  padding: 0 0 0 10px;
+}
+
+.WeatherInfo .description {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
 }
