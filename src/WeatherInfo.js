@@ -15,41 +15,43 @@ export default function WeatherInfo(props){
             <LastUpdated date={props.data.date}/>
             </div>
             <div className="weather-overview">
-            <h1 className="city">{props.data.city}, {props.data.country}</h1>
+                <div className="city-info"> 
+            <h1>{props.data.city}, {props.data.country}</h1>
+            </div>
             <ul>
                 <li>
                  <FormattedTime time={props.data.date} timezone={props.data.timezone}/>
                 </li>
-               
             </ul>
+            
             <div className="row g-0 mt-3">
-                <div className="col-6">
+                <div className="col-sm-3 col-md-6 p-3">
                     <div className="clearfix">
-                        <div className="main-icon float-left">
-                        <WeatherIcon code={props.data.icon} size={52}/></div>
+                        <div className="main-icon float-start">
+                        <WeatherIcon code={props.data.icon} size={64}/></div>
                     
-                    <div className="float-left">
+                    <div className="float-start">
                         <WeatherTemperature celsius={props.data.temperature} unit={props.unit} setUnit={props.setUnit}/>
-                    
+
                     </div>
                 </div>
                 </div>
-                <div className="current-weather col-6">
+                <div className="current-weather col-sm-3 col-md-6">
                     <ul>
                          <li className="description text-capitalize">
                           {props.data.description}
                         </li>
                         <li>
-                            <i class="fas fa-tint"></i> Humidity: {props.data.humidity}%
+                            <i className="fas fa-tint"></i> Humidity: {props.data.humidity}%
                         </li>
                         <li>
-                            <i class="fas fa-wind"></i>Wind: {Math.round(props.data.wind)} km/h
+                            <i className="fas fa-wind"></i> Wind: {Math.round(props.data.wind)} km/h
                         </li>
                     </ul>
                 </div>
             </div>
             </div>
-            </div>
+    </div>
        
     );
 }

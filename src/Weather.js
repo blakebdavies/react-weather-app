@@ -25,7 +25,6 @@ export default function Weather(props){
             temperature:response.data.main.temp, 
             wind: response.data.wind.speed,
             timezone: response.data.timezone,
-            feels: response.data.main.feels_like,
 
             
         });
