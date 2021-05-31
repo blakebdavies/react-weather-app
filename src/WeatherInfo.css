@@ -47,11 +47,11 @@
 }
 
 .WeatherInfo .current-weather {
-  padding: 0 0 0 10px;
+  padding: 10px 0 0 10px;
 }
 
 .WeatherInfo .description {
-  font-size: calc(20px+1.882vw);
+  font-size: calc(16px+2vw);
   font-weight: bold;
   line-height: 1.5;
 }
@@ -64,7 +64,7 @@
 
 .WeatherTemperature .unit {
   color: #01345b;
-  font-size: calc(16px+2vw);
+  font-size: 16px;
   font-weight: bold;
   line-height: 1;
   position: relative;
@@ -85,5 +85,6 @@
 
 .WeatherTemperature a:hover {
   color: #fbd46d;
+  cursor: pointer;
   text-decoration: none;
 }
