@@ -16,7 +16,7 @@ export default function WeatherInfo(props){
             </div>
             <div className="weather-overview d-block">
                 <div className="city-info"> 
-            <h1><span className="city">{props.data.city}</span><span className="country d-sm-none d-md-inline">,{props.data.country}</span></h1>
+            <h1><span className="city">{props.data.city}</span><span className="d-sm-none d-md-inline">,{props.data.country}</span></h1>
             </div>
             <ul>
                 <li>
