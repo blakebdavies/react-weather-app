@@ -17,3 +17,9 @@
   border: 0px;
   box-shadow: 5px 5px 8px rgba(133, 132, 132, 0.5);
 }
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 25px;
+  }
+}

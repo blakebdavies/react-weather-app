@@ -73,7 +73,7 @@
 
 .WeatherTemperature .unit .active {
   color: #01345b;
-  cursor: default;
+  cursor: pointer;
   font-weight: 800;
   text-decoration: none;
 }
