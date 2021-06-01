@@ -1,6 +1,6 @@
 .WeatherInfo h1 {
   color: #01345b;
-  font-size: calc(42px+2vw);
+  font-size: calc(45px +2vh);
   font-weight: 100;
   line-height: 29px;
   margin: 5px 0 10px 0;
@@ -51,7 +51,7 @@
 }
 
 .WeatherInfo .description {
-  font-size: calc(14px+2vw);
+  font-size: 18px;
   font-weight: bold;
   line-height: 1.5;
 }

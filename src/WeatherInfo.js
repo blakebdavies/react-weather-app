@@ -14,9 +14,9 @@ export default function WeatherInfo(props){
             <div className="last-updated">
             <LastUpdated date={props.data.date}/>
             </div>
-            <div className="weather-overview">
+            <div className="weather-overview d-block">
                 <div className="city-info"> 
-            <h1>{props.data.city}, {props.data.country}</h1>
+            <h1><span className="city">{props.data.city}</span><span className="country d-sm-none d-md-inline-block">,{props.data.country}</span></h1>
             </div>
             <ul>
                 <li>
