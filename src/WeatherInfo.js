@@ -15,9 +15,9 @@ export default function WeatherInfo(props){
             <LastUpdated date={props.data.date}/>
             </div>
             <div className="weather-overview d-block">
-                <div className="city-info"> 
-            <h1><span className="city">{props.data.city}</span><span className="d-sm-none d-md-inline">,{props.data.country}</span></h1>
-            </div>
+                
+            <h1 className="city-info">{props.data.city},{props.data.country}</h1>
+        
             <ul>
                 <li>
                  <FormattedTime time={props.data.date} timezone={props.data.timezone}/>

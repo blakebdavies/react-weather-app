@@ -12,7 +12,6 @@ export default function Weather(props){
     const [unit, setUnit] = useState("celsius");
 
     function handleResponse(response){
-        console.log(response);
         setWeatherData({
             ready: true,
             coordinates: response.data.coord,
