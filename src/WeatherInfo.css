@@ -90,7 +90,11 @@
 }
 
 @media all and (max-width: 768px) {
-  .city-info {
-    font-size: 25px;
+  .WeatherInfo .city-info {
+    font-size: 35px;
+  }
+
+  .WeatherInfo .clearfix {
+    justify-content: center;
   }
 }
