@@ -17,9 +17,3 @@
   border: 0px;
   box-shadow: 5px 5px 8px rgba(133, 132, 132, 0.5);
 }
-
-@media all and (max-width: 768) {
-  .city-info {
-    font-size: 35px;
-  }
-}

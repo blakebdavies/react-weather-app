@@ -1,6 +1,6 @@
 .WeatherInfo h1 {
   color: #01345b;
-  font-size: calc(45px +2vh);
+  font-size: 45px;
   font-weight: 100;
   line-height: 29px;
   margin: 5px 0 10px 0;
@@ -87,4 +87,10 @@
   color: #fbd46d;
   cursor: pointer;
   text-decoration: none;
+}
+
+@media all and (max-width: 768px) {
+  .city-info {
+    font-size: 30px;
+  }
 }
