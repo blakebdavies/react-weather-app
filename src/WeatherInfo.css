@@ -88,3 +88,9 @@
   cursor: pointer;
   text-decoration: none;
 }
+
+@media all and (max-width: 768) {
+  .city-info {
+    font-size: 35px;
+  }
+}
