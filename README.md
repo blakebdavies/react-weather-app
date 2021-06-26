@@ -7,7 +7,7 @@
 </a>
    </p>                                                                                               
  <h2>React Weather App</h2>
- <p> This is a Reactjs project focused on creating a simple, user-friendly design with seamless word-search functionality.</p>
+ <p> This is a Reactjs project focused on creating a simple, user-friendly design with real-time weather search functionality.</p>
  <h2> Installation and Set-up Instructions</h2>
  <p>Clone down this repository you will need <code>node</code> and <code>npm</code> installed globally on your machine.</p>
  <h5>Installation</h5>
